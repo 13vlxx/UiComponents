@@ -1,0 +1,47 @@
+body {
+  background-color: rgb(24, 31, 54);
+}
+
+.help-container {
+  max-width: 275px;
+  margin-inline: auto;
+}
+
+.help-toggler {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  font-size: 16px;
+  background-color: transparent;
+  border: 2px #dadadab1 solid;
+  border-radius: 5px;
+  color: #dedede;
+  cursor: pointer;
+  transition: background-color 0.4s ease-out;
+}
+
+.help-toggler:hover {
+  background-color: #333;
+}
+
+.help-content {
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 0.8rem;
+  border: 2px solid #dadadab1;
+  color: #dedede;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+.help-content.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.help-content a {
+  color: #dedede;
+}
